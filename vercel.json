@@ -1,0 +1,14 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/process-alerts",
+      "schedule": "*/5 * * * *"
+    }
+  ],
+  "functions": {
+    "app/api/cron/process-alerts/route.ts": {
+      "memory": 1024,
+      "maxDuration": 300
+    }
+  }
+} 
